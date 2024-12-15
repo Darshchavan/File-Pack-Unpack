@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Pack Files</h2>
+<form method="POST" action="{{ url_for('pack') }}">
+    <label for="folder_name">Folder path:</label>
+    <input type="text" id="folder_name" name="folder_name" placeholder="Enter folder name" required>
+    
+    <label for="pack_file">Packed File Name:</label>
+    <input type="text" id="pack_file" name="pack_file" placeholder="Enter packed file name" required>
+    
+    <button type="submit">Pack</button>
+</form>
+{% endblock %}

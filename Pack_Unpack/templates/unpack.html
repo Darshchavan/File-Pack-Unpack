@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Unpack Files</h2>
+<form method="POST" action="{{ url_for('unpack') }}">
+    <label for="pack_file">Packed File path:</label>
+    <input type="text" id="pack_file" name="pack_file" placeholder="Enter packed file name" required>
+    
+    <button type="submit">Unpack</button>
+</form>
+{% endblock %}
